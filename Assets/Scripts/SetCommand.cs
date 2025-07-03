@@ -24,7 +24,8 @@ public class SetCommand : MonoBehaviour
 			// コマンド用UIを作成
 			GameObject command = Instantiate(m_commandTemp, m_commandParent.transform);
 			// スキルの情報を取得
-			info = await Addressables.LoadAssetAsync<Skill_Info>("ScriptableObject/Skill_Info/Knight_101.asset");
+			info = await Addressables.LoadAssetAsync<Skill_Info>("ScriptableObject/Skill_Info/Knight_101");
+			// スキル情報をセットする
 			command.GetComponent<Command>().SetInfo(info, m_character);
 			// リストでコマンド数を管理
 			m_currentCommands.Add(command);
