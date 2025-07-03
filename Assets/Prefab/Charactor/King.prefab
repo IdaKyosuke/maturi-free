@@ -120,3 +120,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_diffY: 1
+  m_attackTypeAmount: 3

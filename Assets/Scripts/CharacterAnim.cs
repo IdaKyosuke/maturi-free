@@ -16,7 +16,8 @@ public class CharacterAnim : MonoBehaviour
 	private float m_duration = 0;	// 経過時間計測用
 	private float m_moveTime = 0;   // 移動にかかる時間
 
-	[SerializeField] float m_diffY;	// 高さの補正（必要なら付ける）
+	[SerializeField] float m_diffY; // 高さの補正（必要なら付ける）
+	[SerializeField] int m_attackTypeAmount;	// 攻撃の種類数
 
 	private void Start()
 	{
@@ -90,5 +91,11 @@ public class CharacterAnim : MonoBehaviour
 		m_canMove = true;
 
 		SetRun(true);
+	}
+
+	// 攻撃のパターン数を返す
+	public int GetAttackTypeAmount()
+	{
+		return m_attackTypeAmount;
 	}
 }

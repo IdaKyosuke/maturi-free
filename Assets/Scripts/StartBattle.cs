@@ -9,7 +9,8 @@ public class StartBattle : MonoBehaviour
 	[SerializeField] GameObject[] m_players;    // 味方
 	[SerializeField] float m_startInTime = 1.0f;    // 戦闘開始時の入場にかかる時間
 	[SerializeField] Transform m_startPos;  // 入場開始時の場所
-	[SerializeField] Transform[] m_battlePos;	// 戦闘時の場所
+	[SerializeField] Transform[] m_battlePos;   // 戦闘時の場所
+	[SerializeField] SetCommand m_skillManager;
 
 	private bool m_isStart = false;
 
@@ -41,6 +42,7 @@ public class StartBattle : MonoBehaviour
 			{
 				// 到着したら戦闘開始
 				m_isStart = true;
+				m_skillManager.FirstSet();
 			}
 		}
     }
