@@ -8,7 +8,6 @@ public class Skill_Info : ScriptableObject
 	[SerializeField] string m_skillName;
 	[SerializeField] int m_cost;
 	[SerializeField] int m_attackNum;
-	[SerializeField] Sprite m_charaIcon;
 
 	public string GetSkillName()
 	{
@@ -23,10 +22,5 @@ public class Skill_Info : ScriptableObject
 	public int GetAttackNum()
 	{
 		return m_attackNum;
-	}
-
-	public Sprite GetCharaIcon()
-	{
-		return m_charaIcon;
 	}
 }

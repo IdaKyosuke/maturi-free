@@ -17,10 +17,65 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b7133ca29eaf014439a0dd4c20ed3ad0
   m_SerializeEntries:
-  - m_GUID: 84bbb22f3825df349bc8b5a9dd24a5a9
-    m_Address: Assets/ScriptableObject/Skill_Info
+  - m_GUID: 14af56ff5309e8b41b0d03d6e187b5fb
+    m_Address: Assets/Texture/Icon/Martial.png
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Chara_Icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e01e3917255e15429518fe99ecdf3d2
+    m_Address: Assets/Texture/Icon/King.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Chara_Icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28a1fda4edbcbf843954904258fc5a84
+    m_Address: Assets/ScriptableObject/Skill_Info/Martial/01.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill_Info
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d44e28b2114cb54aac56e333b0bb4f9
+    m_Address: Assets/Texture/Icon/Knight_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Chara_Icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58592d5a919cd83489d66e792ef88bad
+    m_Address: Assets/ScriptableObject/Skill_Info/Knight_1/02.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill_Info
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65b0b75864bbfb24281e10f1f27db2d9
+    m_Address: Assets/ScriptableObject/Skill_Info/King/02.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill_Info
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b75c9a2b29e38642ac36197e89438d5
+    m_Address: Assets/ScriptableObject/Skill_Info/Knight_1/01.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill_Info
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8aebec18898ad964091274be17d25905
+    m_Address: Assets/ScriptableObject/Skill_Info/King/03.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill_Info
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b73b278e0e5f1db4ebf21620db0ed85e
+    m_Address: Assets/ScriptableObject/Skill_Info/Martial/02.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill_Info
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cec7fbd9764e9cc4bb65e611033730db
+    m_Address: Assets/ScriptableObject/Skill_Info/King/01.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Skill_Info
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e1561b154490fd14aadb88776087912d, type: 2}

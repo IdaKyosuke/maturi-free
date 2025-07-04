@@ -13,16 +13,19 @@ public class Command : MonoBehaviour
 	// 情報を表示する用のUI
 	[SerializeField] UnityEngine.UI.Image m_icon;
 	[SerializeField] TextMeshProUGUI m_cost; 
-	[SerializeField] TextMeshProUGUI m_skillName; 
+	[SerializeField] TextMeshProUGUI m_skillName;
+
+	// 今自分は選択されているかどうか
+	private bool m_isSelected = false;
 
 	// スキルを生成時に走る関数
-	public void SetInfo(Skill_Info info, GameObject chara)
+	public void SetInfo(Skill_Info info, GameObject chara, Sprite icon)
 	{
 		m_character = chara;
 		m_info = info;
 
 		// 情報を設定
-		m_icon.sprite = m_info.GetCharaIcon();
+		m_icon.sprite = icon;
 		m_cost.SetText("{0}", m_info.GetCost());
 		m_skillName.SetText(m_info.GetSkillName());
 	}
@@ -31,7 +34,17 @@ public class Command : MonoBehaviour
 	{
 		// 攻撃アニメーションを動かす
 		m_character.GetComponent<CharacterAnim>().Attack(m_info.GetAttackNum());
+		m_isSelected = true;
+	}
 
-		Destroy(this.gameObject);
+	public bool IsSelected()
+	{
+		return m_isSelected;
+	}
+
+	// リストを移し替えたら選択されたフラグを折る
+	public void IsChanged()
+	{
+		m_isSelected = false;
 	}
 }

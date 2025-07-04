@@ -11,6 +11,7 @@ public class StartBattle : MonoBehaviour
 	[SerializeField] Transform m_startPos;  // 入場開始時の場所
 	[SerializeField] Transform[] m_battlePos;   // 戦闘時の場所
 	[SerializeField] SetCommand m_skillManager;
+	[SerializeField] GameObject m_attackPhase;	// 攻撃フェーズの管理オブジェクト
 
 	private bool m_isStart = false;
 
@@ -42,6 +43,7 @@ public class StartBattle : MonoBehaviour
 			{
 				// 到着したら戦闘開始
 				m_isStart = true;
+				m_attackPhase.SetActive(false);
 				m_skillManager.FirstSet();
 			}
 		}
